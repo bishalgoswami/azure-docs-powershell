@@ -61,7 +61,7 @@
                     "**/*.yml",
                     "**/*.md"
                 ],
-                "src": "docs-conceptual/aazurermps-latest",
+                "src": "docs-conceptual/azurermps-latest",
                 "version": "azurermps-6.6.0",
                 "dest": "azure"
             },
