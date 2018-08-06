@@ -27,9 +27,10 @@ The **Add-AzureKeyVaultCertificate** cmdlet starts the process of enrolling for 
 ## EXAMPLES
 
 ### Example 1: Add a certificate
-```
+```PowerShell
 PS C:\>$Policy = New-AzureKeyVaultCertificatePolicy -SecretContentType "application/x-pkcs12" -SubjectName "CN=contoso.com" -IssuerName "Self" -ValidityInMonths 6 -ReuseKeyOnRenewal
 PS C:\> Add-AzureKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01" -CertificatePolicy $Policy
+
 ```
 
 The first command uses the New-AzureKeyVaultCertificatePolicy cmdlet to create a certificate policy, and then stores it in the $Policy variable.
