@@ -30,7 +30,17 @@ The **Add-AzureKeyVaultCertificate** cmdlet starts the process of enrolling for 
 ```
 PS C:\>$Policy = New-AzureKeyVaultCertificatePolicy -SecretContentType "application/x-pkcs12" -SubjectName "CN=contoso.com" -IssuerName "Self" -ValidityInMonths 6 -ReuseKeyOnRenewal
 PS C:\> Add-AzureKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01" -CertificatePolicy $Policy
+```
 
+The first command uses the New-AzureKeyVaultCertificatePolicy cmdlet to create a certificate policy, and then stores it in the $Policy variable.
+
+The second command uses **Add-AzureKeyVaultCertificate** to start the process to create a certificate.
+
+The third command uses the Get-AzureKeyVaultCertificateOperation cmdlet to poll the operation to verify that it's complete.
+
+The final command uses the Get-AzureKeyVaultCertificate cmdlet to get the certificate.
+
+``` 
 Status                    : inProgress
 CancellationRequested     : False
 CertificateSigningRequest : MIICpjCCAY4CAQAwFjEUMBIGA1UEAxMLY29udG9zby5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC73w3VRBOlgJ5Od1PjDh+2ytngNZp+ZP4fkuX8K1Ti5LA6Ih7eWx1fgAN/iTb6l
@@ -76,14 +86,6 @@ Enabled     : True
 Created     : 2/8/2016 11:21:45 PM
 Updated     : 2/8/2016 11:21:45 PM
 ```
-
-The first command uses the New-AzureKeyVaultCertificatePolicy cmdlet to create a certificate policy, and then stores it in the $Policy variable.
-
-The second command uses **Add-AzureKeyVaultCertificate** to start the process to create a certificate.
-
-The third command uses the Get-AzureKeyVaultCertificateOperation cmdlet to poll the operation to verify that it's complete.
-
-The final command uses the Get-AzureKeyVaultCertificate cmdlet to get the certificate.
 
 ## PARAMETERS
 
