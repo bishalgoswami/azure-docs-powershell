@@ -20,15 +20,6 @@
                 ],
                 "dest": "module"
             },
-            // {
-            //     "files": [
-            //         "**/*.yml",
-            //         "**/*.md"
-            //     ],
-            //     "src": "docs-conceptual/azurermps-1.2.9",
-            //     "version": "azurermps-1.2.9",
-            //     "dest": "azure"
-            // },
             {
                 "files": [
                     "**/*.yml",
@@ -41,15 +32,6 @@
                 ],
                 "dest": "module"
             },
-            // {
-            //     "files": [
-            //         "**/*.yml",
-            //         "**/*.md"
-            //     ],
-            //     "src": "docs-conceptual/azurermps-4.4.1",
-            //     "version": "azurermps-4.4.1",
-            //     "dest": "azure"
-            // },
             {
                 "files": [
                     "**/*.yml",
@@ -62,15 +44,6 @@
                 ],
                 "dest": "module"
             },
-            // {
-            //     "files": [
-            //         "**/*.yml",
-            //         "**/*.md"
-            //     ],
-            //     "src": "docs-conceptual/azurermps-5.7.0",
-            //     "version": "azurermps-5.7.0",
-            //     "dest": "azure"
-            // },
             {
                 "files": [
                     "**/*.yml",
@@ -105,15 +78,6 @@
                 ],
                 "dest": "module/servicemanagement"
             },
-            // {
-            //     "files": [
-            //         "**/*.yml",
-            //         "**/*.md"
-            //     ],
-            //     "src": "docs-conceptual/azuresmps-4.0.0",
-            //     "version": "azuresmps-4.0.0",
-            //     "dest": "azure/servicemanagement"
-            // },
             {
                 "files": [
                     "toc.yml"
